@@ -1,0 +1,7 @@
+{"event": "normalize", "segments": 4}
+{"event": "enrich", "repo_hits": 0, "memory_hits": 0}
+{"event": "extract", "actions_found": 2}
+{"event": "controller_complete", "actions": 2}
+{"event": "jira_create", "action_id": "bebd66aa-87c7-4292-98fb-3c3d0116908c", "ticket": "SIM-8c316ac6"}
+{"event": "jira_create", "action_id": "f95bf9ac-b8ed-4e95-93fb-9c92771776d9", "ticket": "SIM-d6ce01ca"}
+{"event": "tickets_created", "count": 2}

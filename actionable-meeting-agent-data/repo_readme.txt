@@ -1,7 +1,7 @@
 # AI Analytics Dashboard
 
 ## Overview
-Modern analytics platform providing real-time business intelligence and data visualization capabilities. Built with React frontend and Node.js microservices architecture.
+This is a modern analytics platform providing real-time business intelligence and data visualization capabilities. It is built with a React frontend and a Node.js microservices architecture.
 
 ## Key Features
 - Real-time data streaming and visualization
@@ -10,12 +10,16 @@ Modern analytics platform providing real-time business intelligence and data vis
 - Multi-tenant support with role-based access
 - Mobile-responsive design
 
+
 ## Tech Stack
 **Frontend:** React 18, TypeScript, WebSocket, Chart.js
 **Backend:** Node.js, Express, Redis, PostgreSQL
 **Infrastructure:** Docker, AWS ECS, GitHub Actions CI/CD
 
 ## Quick Start
+
+To get the development environment running, follow these steps:
+
 ```bash
 git clone https://github.com/company/ai-analytics-dashboard
 cd ai-analytics-dashboard
