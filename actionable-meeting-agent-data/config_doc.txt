@@ -1,0 +1,2 @@
+The login feature uses JWT tokens.
+The config file is located in config/auth_config.js.

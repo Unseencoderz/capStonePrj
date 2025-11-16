@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+sentence-transformers
+faiss-cpu
+prometheus_client
+fakeredis
+numpy
+scikit-learn

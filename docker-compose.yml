@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  agent-service:
+    build: .
+    container_name: actionable-agent
+    ports:
+      - "8002:8002"
+    depends_on:
+      - tool-server
+    environment:
+      TOOL_SERVER_URL: "http://tool-server:8000"
+
+  tool-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.tools
+    container_name: tool-server
+    ports:
+      - "8000:8000"
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  redis:
+    image: redis:6
+    container_name: redis
+    ports:
+      - "6379:6379"

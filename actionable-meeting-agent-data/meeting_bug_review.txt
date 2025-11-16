@@ -1,0 +1,24 @@
+BUG TRIAGE MEETING
+Date: 2024-10-16
+Attendees: Mark, Amy, Lisa, David
+
+AMY: Let's review critical bugs from last deployment. Priority 1: User session timeout occurring after 15 minutes instead of configured 60 minutes.
+
+MARK: This is related to the recent Redis configuration change. David, can you investigate the session management service?
+
+DAVID: Already on it. The issue appears to be in the token refresh logic. I'll have a fix ready for testing by EOD.
+
+AMY: Priority 2: Mobile users reporting blank screens on the settings page. Lisa, this seems frontend-related.
+
+LISA: Yes, it's a CSS loading issue on slower networks. I'm implementing a better loading state and optimizing the bundle size.
+
+MARK: Any regression risks with these fixes?
+
+DAVID: For the session fix, we should test across different browsers. Lisa's CSS changes should be low-risk.
+
+AMY: I'll prioritize testing these two fixes. Other medium-priority bugs can wait for the next sprint.
+
+RESOLUTION:
+- Critical bugs to be fixed immediately
+- Deploy hotfix by tomorrow morning
+- Regression testing required before production release
